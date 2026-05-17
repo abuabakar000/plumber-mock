@@ -710,6 +710,54 @@ export const leads: Record<string, LeadData> = {
       }
     ]
   },
+  "revo-plumbing-heating": {
+    ...defaultLead,
+    slug: "revo-plumbing-heating",
+    title: "Revo Plumbing & Heating",
+    logo: "/revo-plumbing.png",
+    heroBgImage: "/hvac-hero.webp",
+    primaryColor: "#0ea5e9",
+    phone: "+13063740922",
+    address: "2406 Wheaton Ave #2, Saskatoon, SK S7L 5Z4",
+    email: "info@revosask.com",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing, heating, and gas-fitting craftsmanship to the Saskatoon community. We offer rapid response times and elite installations.",
+    trustRating: "4.6",
+    customerCount: "300+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.340697668503!2d-106.6755215!3d52.164498800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f3f886cb8275%3A0xed03fd00980a7281!2sRevo%20Plumbing%20%26%20Heating!5e0!3m2!1sen!2sca!4v1779060515132!5m2!1sen!2sca",
+    hours: {
+      monFri: "8:00 AM - 4:00 PM",
+      sat: "8:00 AM - 4:00 PM",
+      emergency: "Available 24/7"
+    },
+    services: [
+      {
+        title: "Premium Plumbing & Fixtures",
+        desc: "Expert installation and repair of luxury faucets, toilets, sinks, garburators, and high-performance sump pumps built for lasting reliability."
+      },
+      {
+        title: "Commercial HVAC Systems",
+        desc: "Comprehensive heating, ventilation, and air conditioning solutions for commercial buildings, designed for maximum comfort and energy efficiency."
+      },
+      {
+        title: "Boiler & Furnace Services",
+        desc: "Saskatoon's premier choices for mid to high-efficiency boiler and furnace replacements, zone valve services, and system maintenance."
+      },
+      {
+        title: "Certified Gas Fittings",
+        desc: "Licensed commercial gas fitting including gas furnace care, BBQ quick connects, patio heaters, fire pit installations, and regulator replacements."
+      },
+      {
+        title: "Backflow Testing & Safety",
+        desc: "Professional certified backflow prevention testing and code-compliance audits to safeguard your property's water supply."
+      },
+      {
+        title: "Mechanical System Upgrades",
+        desc: "Expert commercial mechanical package upgrades, including pump installation, zone valve replacements, and unit heater maintenance."
+      }
+    ]
+  },
 };
 
 export function getLeadData(slug?: string): LeadData {
