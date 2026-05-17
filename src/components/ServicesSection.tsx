@@ -57,8 +57,8 @@ export default function ServicesSection({ leadData: passedLeadData }: { leadData
         <div className="absolute inset-0 bg-gradient-to-b from-[#07090c] via-transparent to-[#07090c] z-10"></div>
         
         <Image 
-          src="/services-hero.png" 
-          alt="Premium Home Fixtures"
+          src="/services-neutral-hero.png" 
+          alt="Premium Home Services"
           fill
           className="object-cover object-right grayscale-[15%] contrast-125"
           priority

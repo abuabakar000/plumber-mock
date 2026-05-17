@@ -15,7 +15,7 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/hero-bg.webp"
+          src={leadData.heroBgImage || "/hero-bg.webp"}
           alt={leadData.title}
           fill
           priority

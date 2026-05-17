@@ -2,6 +2,7 @@ export interface LeadData {
   slug: string;
   title: string;
   logo?: string;
+  heroBgImage?: string; // Custom background image for the hero section
   primaryColor: string;
   phone: string;
   address: string;
@@ -113,6 +114,7 @@ export const leads: Record<string, LeadData> = {
     slug: "revolution-mechanical",
     title: "Revolution Mechanical",
     logo: "/revolution-mechanical.png",
+    heroBgImage: "/hvac-hero.webp",
     primaryColor: "#6b9e2e",
     phone: "+1 (306) 529-4174",
     email: "revolutionmech@gmail.com",
@@ -144,6 +146,7 @@ export const leads: Record<string, LeadData> = {
     slug: "welldone-mechanical",
     title: "Welldone Mechanical Services",
     logo: "/welldone.png",
+    heroBgImage: "/hvac-hero.webp",
     primaryColor: "#77b033",
     phone: "+1 (306) 721-2744",
     email: "regina@welldone.com",
@@ -314,6 +317,7 @@ export const leads: Record<string, LeadData> = {
     slug: "gr-mechanical-contracting",
     title: "G & R Mechanical Contracting",
     logo: "/mechanical-plumbing.png",
+    heroBgImage: "/hvac-hero.webp",
     primaryColor: "#EF4444",
     phone: "+1 (306) 537-3645",
     email: "grm@sasktel.net",
@@ -330,6 +334,7 @@ export const leads: Record<string, LeadData> = {
     slug: "joules-hvac-electric",
     title: "Joules HVAC & Electric Ltd",
     logo: "/joules-electrical.png",
+    heroBgImage: "/hvac-hero.webp",
     primaryColor: "#f59e0b", // Amber Yellow
     phone: "+1 (306) 537-0771",
     email: "Jouleshvac@hotmail.com",
@@ -540,6 +545,7 @@ export const leads: Record<string, LeadData> = {
     slug: "five-star-plumbing-heating-air-conditioning",
     title: "Five Star Plumbing Heating & Air Conditioning",
     logo: "/five-star.png",
+    heroBgImage: "/hvac-hero.webp",
     primaryColor: "#2FA7A0",
     phone: "+1 (306) 934-7002",
     email: "info@FiveStarPlumbing.com",
@@ -582,6 +588,7 @@ export const leads: Record<string, LeadData> = {
     slug: "nickel-plumbing-heating",
     title: "Nickel Plumbing & Heating",
     logo: "/nickel-plumbing.png",
+    heroBgImage: "/hvac-hero.webp",
     primaryColor: "#0ea5e9", // Oceanic Blue
     phone: "+1 (306) 653-1899",
     email: "info@nickelplumbing.com",
