@@ -129,102 +129,75 @@ export default function ContactPage() {
 
             </div>
 
-            {/* Right Side: Contact Form */}
             <div className="lg:col-span-3">
-              <div className="bg-[#0c0e12] border border-zinc-800/60 rounded-3xl p-6 md:p-12 relative overflow-hidden shadow-2xl">
+              <div className="bg-[#0c0e12] border border-zinc-800/60 rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-12 relative overflow-hidden shadow-2xl">
                 {/* Form Ambient Glow */}
                 <div className="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none"></div>
 
-                <div className="relative z-10 mb-10">
+                <div className="relative z-10 mb-6 md:mb-10">
                   <h3 className="text-2xl md:text-3xl font-light text-white tracking-tight mb-2">Request Consultation</h3>
                   <p className="text-zinc-500 text-sm font-light">Fill out the form below and our team will be in touch shortly.</p>
                 </div>
 
-                <form className="relative z-10 flex flex-col gap-8">
+                <form className="relative z-10 flex flex-col gap-5 md:gap-8">
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
                     {/* Name */}
-                    <div className="flex flex-col gap-2.5 group">
+                    <div className="flex flex-col gap-1.5 md:gap-2.5 group">
                       <label htmlFor="name" className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-500 group-focus-within:text-amber-500 transition-colors">Full Name</label>
                       <input 
                         type="text" 
                         id="name"
                         placeholder="John Doe"
-                        className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-5 py-4.5 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-[15px] placeholder:text-zinc-700"
+                        className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-4 py-3 md:px-5 md:py-4 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-sm md:text-[15px] placeholder:text-zinc-700"
                       />
                     </div>
                     {/* Phone */}
-                    <div className="flex flex-col gap-2.5 group">
+                    <div className="flex flex-col gap-1.5 md:gap-2.5 group">
                       <label htmlFor="phone" className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-500 group-focus-within:text-amber-500 transition-colors">Phone Number</label>
                       <input 
                         type="tel" 
                         id="phone"
                         placeholder="(555) 000-0000"
-                        className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-5 py-4.5 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-[15px] placeholder:text-zinc-700"
+                        className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-4 py-3 md:px-5 md:py-4 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-sm md:text-[15px] placeholder:text-zinc-700"
                       />
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Email */}
-                    <div className="flex flex-col gap-2.5 group">
-                      <label htmlFor="email" className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-500 group-focus-within:text-amber-500 transition-colors">Email Address</label>
-                      <input 
-                        type="email" 
-                        id="email"
-                        placeholder="john@example.com"
-                        className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-5 py-4.5 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-[15px] placeholder:text-zinc-700"
-                      />
-                    </div>
-                    {/* Service Type */}
-                    <div className="flex flex-col gap-2.5 group">
-                      <label htmlFor="service" className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-500 group-focus-within:text-amber-500 transition-colors">Service Needed</label>
-                      <div className="relative">
-                        <select 
-                          id="service"
-                          className="w-full bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-5 py-4.5 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-[15px] appearance-none cursor-pointer"
-                        >
-                          <option value="" className="bg-zinc-900">Select a service...</option>
-                          <option value="emergency" className="bg-zinc-900">24/7 Emergency Repair</option>
-                          <option value="drain" className="bg-zinc-900">Drain Cleaning</option>
-                          <option value="leak" className="bg-zinc-900">Leak Repair</option>
-                          <option value="water-heater" className="bg-zinc-900">Water Heater Services</option>
-                          <option value="pipes" className="bg-zinc-900">Pipe Replacement</option>
-                          <option value="fixture" className="bg-zinc-900">Fixture Installation</option>
-                          <option value="other" className="bg-zinc-900">Other / Not Sure</option>
-                        </select>
-                        <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
+                  {/* Email */}
+                  <div className="flex flex-col gap-1.5 md:gap-2.5 group">
+                    <label htmlFor="email" className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-500 group-focus-within:text-amber-500 transition-colors">Email Address</label>
+                    <input 
+                      type="email" 
+                      id="email"
+                      placeholder="john@example.com"
+                      className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-4 py-3 md:px-5 md:py-4 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-sm md:text-[15px] placeholder:text-zinc-700"
+                    />
                   </div>
 
                   {/* Message */}
-                  <div className="flex flex-col gap-2.5 group">
+                  <div className="flex flex-col gap-1.5 md:gap-2.5 group">
                     <label htmlFor="message" className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-500 group-focus-within:text-amber-500 transition-colors">Project Details or Issue</label>
                     <textarea 
                       id="message"
-                      rows={5}
+                      rows={4}
                       placeholder="Please describe what you need help with..."
-                      className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-5 py-4.5 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-[15px] resize-none placeholder:text-zinc-700"
+                      className="bg-zinc-950/50 border border-zinc-800 text-white rounded-xl px-4 py-3 md:px-5 md:py-4 focus:outline-none focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/5 transition-all font-light text-sm md:text-[15px] resize-none placeholder:text-zinc-700"
                     ></textarea>
                   </div>
 
                   {/* Submit Button */}
-                  <div className="pt-4">
+                  <div className="pt-2 md:pt-4">
                     <button 
                       type="button" 
-                      className="flex items-center justify-center gap-3 w-full py-5 bg-amber-500 hover:bg-amber-400 text-zinc-950 rounded-xl text-[12px] font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(245,158,11,0.5)] hover:shadow-[0_15px_40px_-10px_rgba(245,158,11,0.6)] hover:-translate-y-1"
+                      className="flex items-center justify-center gap-3 w-full py-4 md:py-5 bg-amber-500 hover:bg-amber-400 text-zinc-950 rounded-xl text-[12px] font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(245,158,11,0.5)] hover:shadow-[0_15px_40px_-10px_rgba(245,158,11,0.6)] hover:-translate-y-1"
                     >
                       Submit Request
                       <ArrowRight className="w-4 h-4" />
                     </button>
                     
-                    <p className="text-zinc-500 text-center text-[11px] font-light mt-6 leading-relaxed">
+                    <p className="text-zinc-500 text-center text-[11px] font-light mt-4 md:mt-6 leading-relaxed">
                       By submitting this form, you agree to our privacy policy. <br className="hidden md:block" />
                       We typically respond within <span className="text-amber-500/80 font-medium">15 minutes</span> during business hours.
                     </p>
