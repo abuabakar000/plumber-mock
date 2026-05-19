@@ -9,18 +9,34 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
   const highlightWord = leadData.highlightWord;
   const subtext = leadData.heroSubtext;
   const words = heading.split(" ");
+  const desktopBg = leadData.heroBgImage || "/hero-bg.webp";
+  const isHvac = desktopBg.includes("hvac");
+  const mobileBg = isHvac ? "/hvac-mb.webp" : "/plumber-mb.webp";
   
   return (
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-zinc-950 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <Image
-          src={leadData.heroBgImage || "/hero-bg.webp"}
-          alt={leadData.title}
-          fill
-          priority
-          className="object-cover object-center opacity-60 mix-blend-overlay"
-        />
+        {/* Desktop Background Image */}
+        <div className="hidden md:block absolute inset-0 w-full h-full">
+          <Image
+            src={desktopBg}
+            alt={leadData.title}
+            fill
+            priority
+            className="object-cover object-center opacity-60 mix-blend-overlay"
+          />
+        </div>
+        {/* Mobile Background Image */}
+        <div className="block md:hidden absolute inset-0 w-full h-full">
+          <Image
+            src={mobileBg}
+            alt={leadData.title}
+            fill
+            priority
+            className="object-cover object-center opacity-60 mix-blend-overlay"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-zinc-950/20 to-zinc-950/90"></div>
       </div>
 

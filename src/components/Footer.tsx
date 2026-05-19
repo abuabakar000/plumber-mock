@@ -5,6 +5,20 @@ import { LeadData, getLeadData } from "@/data/leads";
 
 export default function Footer({ leadData: passedLeadData }: { leadData?: LeadData }) {
   const leadData = passedLeadData || getLeadData();
+
+  const defaultServicesList = [
+    "Drain Cleaning",
+    "Leak Repair",
+    "Water Heater Services",
+    "Pipe Repair & Replacement",
+    "Fixture Installation",
+    "Sump Pump Services"
+  ];
+
+  const footerServices = leadData.services && leadData.services.length > 0
+    ? leadData.services.map(s => s.title).filter((t): t is string => !!t)
+    : defaultServicesList;
+
   return (
     <footer className="bg-[#050608] border-t border-zinc-800/60 pt-20 pb-8 mt-auto z-20 relative">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -35,6 +49,7 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
               )}
             </div>
             
+            {/* Ambient/brand text dynamically tailored */}
             <p className="text-zinc-400 font-light leading-relaxed mb-8 max-w-sm">
               Reliable mechanical solutions, whenever you need them. We're here 24/7.
             </p>
@@ -64,14 +79,11 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
               <span style={{ backgroundColor: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`absolute -bottom-2 left-0 w-6 h-[2px] ${leadData.slug === "default" ? "bg-amber-500" : ""}`}></span>
             </h4>
             <div className="flex flex-col gap-3 mt-2">
-              <span className="text-zinc-400 text-[14px] font-light">Drain Cleaning</span>
-              <span className="text-zinc-400 text-[14px] font-light">Leak Repair</span>
-              <span className="text-zinc-400 text-[14px] font-light">Water Heaters</span>
-              <span className="text-zinc-400 text-[14px] font-light">Pipe Replacement</span>
-              <span className="text-zinc-400 text-[14px] font-light">Fixture Install</span>
-              <span className="text-zinc-400 text-[14px] font-light">Sump Pumps</span>
-              <span className="text-zinc-400 text-[14px] font-light">Garbage Disposals</span>
-              <span className="text-zinc-400 text-[14px] font-light">Sewer Lines</span>
+              {footerServices.map((serviceName, idx) => (
+                <span key={idx} className="text-zinc-400 text-[14px] font-light">
+                  {serviceName}
+                </span>
+              ))}
             </div>
           </div>
 

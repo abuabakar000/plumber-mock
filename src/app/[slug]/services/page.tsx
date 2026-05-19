@@ -135,17 +135,27 @@ export default async function ServicesPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const leadData = getLeadData(slug);
   
-  // Use lead color for icons in the grid
-  // Use lead color for icons and apply dynamic overrides for the first 4 services
-  const dynamicDetailedServices = detailedServices.map((service, idx) => ({
-    ...service,
-    title: idx < 4 ? (leadData.services?.[idx]?.title || service.title) : service.title,
-    desc: idx < 4 ? (leadData.services?.[idx]?.desc || service.desc) : service.desc,
-    icon: React.cloneElement(service.icon as React.ReactElement<any>, { 
-      style: { color: leadData.slug === "default" ? "" : leadData.primaryColor },
-      className: `w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""}`
-    })
-  }));
+  const dynamicDetailedServices = leadData.services && leadData.services.length > 0
+    ? leadData.services.map((customService, idx) => {
+        const defaultService = detailedServices[idx] || detailedServices[detailedServices.length - 1];
+        return {
+          id: defaultService.id,
+          title: customService.title || defaultService.title,
+          desc: customService.desc || defaultService.desc,
+          features: defaultService.features,
+          icon: React.cloneElement(defaultService.icon as React.ReactElement<any>, { 
+            style: { color: leadData.slug === "default" ? "" : leadData.primaryColor },
+            className: `w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""}`
+          })
+        };
+      })
+    : detailedServices.slice(0, 6).map((service) => ({
+        ...service,
+        icon: React.cloneElement(service.icon as React.ReactElement<any>, { 
+          style: { color: leadData.slug === "default" ? "" : leadData.primaryColor },
+          className: `w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""}`
+        })
+      }));
 
   return (
     <>
