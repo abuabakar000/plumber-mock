@@ -758,6 +758,553 @@ export const leads: Record<string, LeadData> = {
       }
     ]
   },
+  "v-s-plumbing-heating": {
+    ...defaultLead,
+    slug: "v-s-plumbing-heating",
+    title: "V & S Plumbing & Heating",
+    logo: "/vs-plumbing.png",
+    primaryColor: "#0caaf3", // Oceanic Blue
+    phone: "+13062426313",
+    email: "vs@plumbing.com",
+    address: "517 44 St E, Saskatoon, SK S7K 0V9",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "4.8",
+    customerCount: "200+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.5261246477735!2d-106.6612907!3d52.161127099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f6066b98d59d%3A0x181e29a68101be9e!2sV%20%26%20S%20Plumbing%20%26%20Heating%20Ltd!5e0!3m2!1sen!2sca!4v1779230216866!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "lexus-plumbing-heating": {
+    ...defaultLead,
+    slug: "lexus-plumbing-heating",
+    title: "Lexus Plumbing & Heating",
+    logo: "/lexus-plumbing.png",
+    primaryColor: "#77b033", // Oceanic Blue
+    phone: "+13062221277",
+    email: "lexus@plumbing.com",
+    address: "419 47th St E #9, Saskatoon, SK S7K 5H4",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.2515475943364!2d-106.6628603!3d52.1661198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f65e35f0de69%3A0xcd0cddc3eed6b4aa!2sLexus%20Plumbing%20%26%20Heating!5e0!3m2!1sen!2sca!4v1779230318630!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "gords-plumbing-heating": {
+    ...defaultLead,
+    slug: "gords-plumbing-heating",
+    title: "Gord's Plumbing & Heating",
+    logo: "/gods-plumbing.png",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+13066510617",
+    email: "godplumbing@gmail.com",
+    address: "314 Jessop Ave, Saskatoon, SK S7N 1Y6",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.2186468015957!2d-106.59307729999999!3d52.130344099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f4078fa03769%3A0xa3710d20cd715599!2sGord&#39;s%20Plumbing%20%26%20Heating!5e0!3m2!1sen!2sca!4v1779232945254!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "mj-plumbing-heating": {
+    ...defaultLead,
+    slug: "mj-plumbing-heating",
+    title: "MJ plumbing and Heating",
+    logo: "/mj-plumbing.png",
+    primaryColor: "#77b033", // Oceanic Blue
+    phone: "+16393185384",
+    email: "mj@plumbing.com",
+    address: "307 Blackthorn Crescent, Saskatoon, SK S7V 1B1",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.399546020394!2d-106.5738959!3d52.1088587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f351c22e916b%3A0xbe166b6188210735!2sMJ%20plumbing%20and%20Heating!5e0!3m2!1sen!2sca!4v1779230776857!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "proactive-plumbing-heating": {
+    ...defaultLead,
+    slug: "proactive-plumbing-heating",
+    title: "Proactive Plumbing & Heating",
+    logo: "/procative-plumbing.png",
+    primaryColor: "#f59e0b", // Amber Yellow
+    phone: "+13062907888",
+    email: "procative@plumbing.com",
+    address: "510 44 St E, Saskatoon, SK S7K 0W1",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "4.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.4960868993453!2d-106.6622474!3d52.1616733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f593c13e3715%3A0xef511e669676dfe2!2sProactive%20Plumbing%20%26%20Heating%20Ltd!5e0!3m2!1sen!2sca!4v1779230966334!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "kolibab-mechanical": {
+    ...defaultLead,
+    slug: "kolibab-mechanical",
+    title: "Kolibab Mechanical",
+    logo: "/kolibob-mech.png",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+13062491049",
+    email: "kolibab@mechanichal.com",
+    address: "3306 Faithfull Ave, Saskatoon, SK S7K 8H1",
+    heroHeading: "Elite Mechanical in Saskatoon",
+    highlightWord: "Mechanical",
+    heroSubtext: "Providing master-level plumbing and mechanical craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "4.6",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.260128397279!2d-106.6599651!3d52.1841442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f66ce78f634b%3A0xc0928616f25b0780!2sKolibab%20Mechanical!5e0!3m2!1sen!2sca!4v1779231125127!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "pressure-plumbing-heating": {
+    ...defaultLead,
+    slug: "pressure-plumbing-heating",
+    title: "Pressure Plumbing and Heating",
+    logo: "/preassure-plumbing.png",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+13067170122",
+    email: "preassure@plumbing.com",
+    address: "Saskatoon, SK S7K 4V7",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.0549375341952!2d-106.6241751!3d52.1696946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f530959ea953%3A0x7bc0aa6e8fff6562!2sPressure%20Plumbing%20and%20Heating%20Ltd!5e0!3m2!1sen!2sca!4v1779231272361!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "wyatt-plumbing-heating": {
+    ...defaultLead,
+    slug: "wyatt-plumbing-heating",
+    title: "Wyatt Plumbing & Heating",
+    logo: "/wyatt.png",
+    primaryColor: "#EF4444", // Oceanic Blue
+    phone: "306-242-9727",
+    email: "dean@wyattplumbingheating.ca",
+    address: "804 46th Street E | Saskatoon, SK S7K 3V7",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9789.295430996144!2d-106.655169!3d52.164805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f671e921fb33%3A0x1af28f0084124f52!2sWyatt%20Plumbing%20%26%20Heating%201973%20Ltd!5e0!3m2!1sen!2sca!4v1779231433342!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Commercial Heating",
+        desc: "Consistent, reliable temperature control for businesses of all sizes. We install, maintain, and repair furnaces, gas lines, burners, boilers, and heat exchangers."
+      },
+      {
+        title: "Commercial Plumbing",
+        desc: "Heavy-duty plumbing solutions for high-use commercial bathrooms, industrial sinks, and floor drains. We diagnose and repair any commercial plumbing issue rapidly."
+      },
+      {
+        title: "Floor Heating",
+        desc: "Comfortable and dust-free radiant in-floor heating systems for homes and businesses. We design, install, and repair floor heating to optimize indoor comfort and air quality."
+      },
+      {
+        title: "Boiler Installation & Repair",
+        desc: "Expert installation and repair of energy-efficient boilers for residential and commercial spaces. Our certified technicians troubleshoot uneven heating and odors."
+      },
+      {
+        title: "AC Installation & Repair",
+        desc: "Keep your home cool all summer with professional air conditioning installs, compressor replacements, and preventative maintenance for lower utility bills."
+      },
+      {
+        title: "Water Filtration & Treatment",
+        desc: "High-performance water softeners, reverse osmosis systems, and whole-house filtration. We eliminate hard water scaling and verify water safety on every visit."
+      }
+    ]
+  },
+  "drain-away": {
+    ...defaultLead,
+    slug: "drain-away",
+    title: "Drain Away",
+    logo: "/drainaway.png",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+13066513211",
+    email: "drainaway@plumbing.com",
+    address: "214 Douglas Crescent, Saskatoon, SK S7L 4T2",
+    heroHeading: "Elite Drain Services in Saskatoon",
+    highlightWord: "Drain",
+    heroSubtext: "Providing master-level drain cleaning and plumbing craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite maintenance for your property.",
+    trustRating: "5.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.8286370844953!2d-106.730998!3d52.137438599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f724ba6ca8b3%3A0xf715a9644dfe4fe1!2sDrain%20Away!5e0!3m2!1sen!2sca!4v1779231508384!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Advanced Drain Cleaning",
+        desc: "Precision drain cleaning using state-of-the-art mechanical tools to clear even the most stubborn blockages instantly."
+      },
+      {
+        title: "CCTV Camera Inspections",
+        desc: "High-definition sewer camera inspections to accurately diagnose hidden pipe issues and ensure absolute pipe integrity."
+      },
+      {
+        title: "High-Pressure Hydro Jetting",
+        desc: "Powerful high-pressure water jetting that thoroughly scours grease, scale, and roots from your property's main lines."
+      },
+      {
+        title: "Emergency Sewer Relief",
+        desc: "Rapid 24/7 emergency dispatch for catastrophic backups, flooded basements, and critical pipe blocks."
+      },
+      {
+        title: "Root Intrusion Removal",
+        desc: "Specialized cutting heads and mechanical routing to completely eliminate invasive tree roots from sewer lines."
+      },
+      {
+        title: "Trenchless Pipe Patching",
+        desc: "Localized point repairs that fix sewer damages underground without tearing up your lawn or driveways."
+      }
+    ]
+  },
+  "lane-mechanical": {
+    ...defaultLead,
+    slug: "lane-mechanical",
+    title: "Lane Mechanical",
+    logo: "/lane-mech.png",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+13063820189",
+    email: "drainaway@mech.com",
+    address: "1640 33rd St W, Saskatoon, SK S7L 1R5",
+    heroHeading: "Elite Mechanical in Saskatoon",
+    highlightWord: "Mechanical",
+    heroSubtext: "Providing master-level plumbing and mechanical craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "4.0",
+    customerCount: "100+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.4345321875394!2d-106.69650299999999!3d52.14460689999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f6c66c7a959f%3A0x5c381c06382dc353!2sLane%20Mechanical!5e0!3m2!1sen!2sca!4v1779231934221!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Commercial HVAC & Heating",
+        desc: "Precision commercial and residential heating solutions, ensuring perfect indoor climate control through the harshest winters."
+      },
+      {
+        title: "Professional Plumbing Services",
+        desc: "From heavy-duty pipe replacements to simple fixture installations, our licensed plumbers handle any scale of work."
+      },
+      {
+        title: "Elite Air Conditioning",
+        desc: "Expert cooling installation, AC repairs, and comprehensive system diagnostic checks to maximize energy efficiency."
+      },
+      {
+        title: "Certified Gas Line Fitting",
+        desc: "Safe, licensed gas line installations for furnaces, garage heaters, outdoor kitchens, and modern appliance hookups."
+      },
+      {
+        title: "Indoor Air Quality Systems",
+        desc: "Dedicated ventilation solutions including HEPA filtration and UV purifiers to provide pristine, healthy air."
+      },
+      {
+        title: "Hydronic Floor Heating",
+        desc: "Silent, energy-efficient radiant in-floor heating design and installation for unrivaled modern home comfort."
+      }
+    ]
+  },
+  "rec-plumbing": {
+    ...defaultLead,
+    slug: "rec-plumbing",
+    title: "REC Plumbing",
+    logo: "/rec-plumbing.png",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+1 306-948-6512",
+    email: "recplumbinginc@gmail.com",
+    address: "499Q+35 Saskatoon, Saskatchewan",
+    heroHeading: "Elite Plumbing in Saskatoon",
+    highlightWord: "Plumbing",
+    heroSubtext: "Providing master-level plumbing craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5.0",
+    customerCount: "150+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.743176315731!2d-106.61142685048968!3d52.11715870005474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f15043d94861%3A0x311d875d63a25c94!2sREC%20Plumbing%20Inc!5e0!3m2!1sen!2sca!4v1779232111964!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "From rapid leak repairs to full custom renovations, our certified technicians deliver pristine craftsmanship you can count on."
+      },
+      {
+        title: "Advanced Heating Solutions",
+        desc: "Expert installation, repairs, and maintenance for boilers, furnaces, and radiant in-floor heating systems."
+      },
+      {
+        title: "Water Heater Installations",
+        desc: "Energy-efficient traditional and tankless hot water systems sized perfectly for your home's daily demands."
+      },
+      {
+        title: "Sewer & Drain Services",
+        desc: "Utilizing state-of-the-art camera inspections and high-pressure jetting to clear blockages and restore full flow."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed installation of gas lines for fireplaces, outdoor BBQ connects, garage heaters, and system upgrades."
+      },
+      {
+        title: "Emergency Rapid Response",
+        desc: "24/7 priority onsite dispatch for major pipe bursts, heating failures, and flooding emergencies to protect your home."
+      }
+    ]
+  },
+  "core-hvac-services": {
+    ...defaultLead,
+    slug: "core-hvac-services",
+    title: "Core HVAC Services",
+    logo: "/core-hvac.png",
+    heroBgImage: "/hvac-hero.webp",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+13063825444",
+    email: "Core@hvac.com",
+    address: "418B 48 St E, Saskatoon, SK S7K 5T9",
+    heroHeading: "Elite HVAC in Saskatoon",
+    highlightWord: "HVAC",
+    heroSubtext: "Providing master-level HVAC, heating, and cooling craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "4.0",
+    customerCount: "100+",
+    services: [
+      {
+        title: "Furnace Repair & Install",
+        desc: "Precision furnace repair and installation, keeping your home warm and cozy through the coldest winters."
+      },
+      {
+        title: "Air Conditioning Services",
+        desc: "Professional A/C installation, repair, and diagnostic tune-ups to keep you cool and reduce energy costs."
+      },
+      {
+        title: "Heat Pump Solutions",
+        desc: "High-efficiency heat pump installations providing eco-friendly heating and cooling throughout the entire year."
+      },
+      {
+        title: "Indoor Air Quality",
+        desc: "Advanced whole-house air filtration, UV purifiers, and humidifiers to safeguard your family's health."
+      },
+      {
+        title: "Thermostat & Automation",
+        desc: "Setup of smart thermostats and temperature zones for total climate control and optimized energy efficiency."
+      },
+      {
+        title: "Emergency HVAC Support",
+        desc: "Rapid 24/7 priority onsite response for heating failures, A/C breakdowns, and sudden system issues."
+      }
+    ]
+  },
+  "mwk-heating-cooling": {
+    ...defaultLead,
+    slug: "mwk-heating-cooling",
+    title: "MWK Heating & Cooling",
+    logo: "/mwk.png",
+    heroBgImage: "/hvac-hero.webp",
+    primaryColor: "#0ea5e9", // Oceanic Blue
+    phone: "+13062207584",
+    email: "mwk@heatingandcooling.com",
+    address: "110 Carling Pl, Saskatoon, SK S7M 4C2",
+    heroHeading: "Elite HVAC in Saskatoon",
+    highlightWord: "HVAC",
+    heroSubtext: "Providing master-level HVAC, heating, and cooling craftsmanship to the Saskatoon community. We offer 24/7 rapid response and elite installations for your home.",
+    trustRating: "5.0",
+    customerCount: "1000+",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.8360217219433!2d-106.7081954!3d52.1191123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f74e87b3cc0f%3A0xc7065009446ed0b8!2sMWK%20Heating%20%26%20Cooling%20LTD!5e0!3m2!1sen!2sca!4v1779232654960!5m2!1sen!2sca",
+    services: [
+      {
+        title: "Furnace Repair & Install",
+        desc: "Precision furnace repair and installation, keeping your home warm and cozy through the coldest winters."
+      },
+      {
+        title: "Air Conditioning Services",
+        desc: "Professional A/C installation, repair, and diagnostic tune-ups to keep you cool and reduce energy costs."
+      },
+      {
+        title: "Heat Pump Solutions",
+        desc: "High-efficiency heat pump installations providing eco-friendly heating and cooling throughout the entire year."
+      },
+      {
+        title: "Indoor Air Quality",
+        desc: "Advanced whole-house air filtration, UV purifiers, and humidifiers to safeguard your family's health."
+      },
+      {
+        title: "Thermostat & Automation",
+        desc: "Setup of smart thermostats and temperature zones for total climate control and optimized energy efficiency."
+      },
+      {
+        title: "Emergency HVAC Support",
+        desc: "Rapid 24/7 priority onsite response for heating failures, A/C breakdowns, and sudden system issues."
+      }
+    ]
+  },
 };
 
 export function getLeadData(slug?: string): LeadData {
