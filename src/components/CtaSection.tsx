@@ -32,7 +32,7 @@ export default function CtaSection({ leadData: passedLeadData }: { leadData?: Le
         </div>
 
         {/* Content Wrapper for Top Portion */}
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-16 lg:pt-24 pb-14 relative z-10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-12 md:pt-16 lg:pt-24 pb-10 md:pb-14 relative z-10">
           <div className="flex flex-col xl:flex-row items-center gap-10 xl:gap-0">
 
             {/* ── Left Column ── */}
@@ -46,7 +46,7 @@ export default function CtaSection({ leadData: passedLeadData }: { leadData?: Le
                 className="absolute left-0 top-0 bottom-0 w-[3px] rounded-full"
               ></div>
 
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <span
                   style={{ color: leadData.primaryColor }}
                   className="text-[11px] font-bold tracking-[0.15em] uppercase"
@@ -59,7 +59,7 @@ export default function CtaSection({ leadData: passedLeadData }: { leadData?: Le
                 />
               </div>
 
-              <h2 className="text-[38px] md:text-5xl font-light text-white leading-[1.1] tracking-tight mb-6">
+              <h2 className="text-3xl md:text-5xl font-light text-white leading-[1.1] tracking-tight mb-4 md:mb-6">
                 Expert Service.<br />
                 Just a <span
                   style={{ color: leadData.primaryColor }}
@@ -69,8 +69,8 @@ export default function CtaSection({ leadData: passedLeadData }: { leadData?: Le
                 </span>
               </h2>
 
-              <p className="text-zinc-400 text-[15px] font-light leading-relaxed max-w-sm mb-10">
-                From emergency repairs to full installations, we're here to deliver solutions you can trust.
+              <p className="text-zinc-400 text-[14px] md:text-[15px] font-light leading-relaxed max-w-sm mb-6 md:mb-10">
+                From emergency repairs to full installations, we&apos;re here to deliver solutions you can trust.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -80,7 +80,7 @@ export default function CtaSection({ leadData: passedLeadData }: { leadData?: Le
                     backgroundColor: leadData.primaryColor,
                     boxShadow: `0 0 20px ${leadData.primaryColor}33`
                   }}
-                  className="inline-flex w-full sm:w-auto whitespace-nowrap justify-center px-8 py-4 hover:brightness-110 text-zinc-950 rounded text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-300 items-center gap-3"
+                  className="inline-flex w-full sm:w-auto whitespace-nowrap justify-center px-6 py-3.5 md:px-8 md:py-4 hover:brightness-110 text-zinc-950 rounded text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-300 items-center gap-3"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.733.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
@@ -90,8 +90,8 @@ export default function CtaSection({ leadData: passedLeadData }: { leadData?: Le
 
                 <Link
                   href={leadData.slug === "default" ? "/contact" : `/${leadData.slug}/contact`}
-                  style={{ "--hover-color": leadData.primaryColor } as any}
-                  className="inline-flex w-full sm:w-auto whitespace-nowrap justify-center px-8 py-4 bg-transparent border border-zinc-600 hover:border-[var(--hover-color)] hover:text-[var(--hover-color)] text-white rounded text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-300 items-center gap-3"
+                  style={{ "--hover-color": leadData.primaryColor } as React.CSSProperties}
+                  className="inline-flex w-full sm:w-auto whitespace-nowrap justify-center px-6 py-3.5 md:px-8 md:py-4 bg-transparent border border-zinc-600 hover:border-[var(--hover-color)] hover:text-[var(--hover-color)] text-white rounded text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-300 items-center gap-3"
                 >
                   Schedule Service
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
@@ -129,7 +129,7 @@ export default function CtaSection({ leadData: passedLeadData }: { leadData?: Le
                   </span>
                 </div>
                 <h3 className="text-white text-[9px] md:text-[11px] font-bold tracking-[0.05em] md:tracking-[0.1em] uppercase mb-1 md:mb-2 leading-tight">24/7<br />Emergency</h3>
-                <p className="text-zinc-500 text-[12px] font-light leading-relaxed max-w-[140px] hidden md:block">We're available anytime you need us.</p>
+                <p className="text-zinc-500 text-[12px] font-light leading-relaxed max-w-[140px] hidden md:block">We&apos;re available anytime you need us.</p>
               </div>
 
               {/* Feature 2 */}
