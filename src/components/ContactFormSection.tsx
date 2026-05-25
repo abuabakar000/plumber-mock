@@ -307,7 +307,7 @@ export default function ContactFormSection({ leadData }: ContactFormSectionProps
                         rows={3}
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        placeholder="Please describe what plumbing or heating support you need..."
+                        placeholder="Please describe what support you need..."
                         style={{ "--focus-border": primaryThemeColor } as any}
                         className="bg-zinc-950/50 border border-zinc-850 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-[var(--focus-border)] focus:ring-1 focus:ring-[var(--focus-border)]/50 transition-all font-light text-sm resize-none placeholder:text-zinc-700"
                       ></textarea>
