@@ -137,7 +137,7 @@ export default function Navbar({ leadData: passedLeadData }: { leadData?: LeadDa
                 style={{ "--hover-color": leadData.slug === "default" ? "#f59e0b" : leadData.primaryColor } as any}
                 className="relative group hover:text-[var(--hover-color)] transition-colors"
               >
-                Contact
+                Schedule
                 <span 
                   style={{ backgroundColor: leadData.slug === "default" ? "" : leadData.primaryColor }}
                   className={`absolute -bottom-1 left-0 w-0 h-[1px] ${leadData.slug === "default" ? "bg-amber-500" : ""} transition-all duration-300 group-hover:w-full`}
@@ -183,7 +183,7 @@ export default function Navbar({ leadData: passedLeadData }: { leadData?: LeadDa
             {[
               { name: "Services", href: leadData.slug === "default" ? "/services" : `/${leadData.slug}/services`, num: "01" },
               { name: "Locations", href: leadData.slug === "default" ? "/locations" : `/${leadData.slug}/locations`, num: "02" },
-              { name: "Contact", href: leadData.slug === "default" ? "/contact" : `/${leadData.slug}/contact`, num: "03" },
+              { name: "Schedule", href: leadData.slug === "default" ? "/contact" : `/${leadData.slug}/contact`, num: "03" },
             ].map((item, index) => (
               <Link
                 key={item.name}
