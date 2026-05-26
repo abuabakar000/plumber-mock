@@ -63,6 +63,7 @@ export const leads: Record<string, LeadData> = {
     slug: "penberg-mechanical",
     title: "Penberg Mechanical",
     logo: "/penberg-mechanical.png",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#0ea5e9", // Oceanic Blue
     phone: "+1 (306) 533-8290",
     email: "Penbergmech@gmail.com",
@@ -72,7 +73,33 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing and mechanical craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.9",
     customerCount: "200+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0265513383265!2d-104.6299832!3d50.4406061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e127cd01475%3A0xd92f382ca980a15!2sPenberg%20Mechanical!5e0!3m2!1sen!2s!4v1778269283938!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0265513383265!2d-104.6299832!3d50.4406061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e127cd01475%3A0xd92f382ca980a15!2sPenberg%20Mechanical!5e0!3m2!1sen!2s!4v1778269283938!5m2!1sen!2s",
+    services: [
+      {
+        title: "Master-Level Plumbing",
+        desc: "Comprehensive residential and commercial plumbing services from Regina's trusted family owned and operated mechanical specialists."
+      },
+      {
+        title: "Certified Gas Fitting",
+        desc: "Licensed gas line installations, BBQ hookups, garage heaters, and code-compliance system updates with absolute safety."
+      },
+      {
+        title: "Advanced Air Conditioning",
+        desc: "High-efficiency A/C repairs, seasonal diagnostic tune-ups, and luxury central cooling installations for premium summer comfort."
+      },
+      {
+        title: "High-End Renovations",
+        desc: "Custom kitchen and luxury bathroom plumbing renovations. We carry out your design vision with master mechanical craftsmanship."
+      },
+      {
+        title: "Premium Heating Solutions",
+        desc: "Professional heating installations, furnace tune-ups, and boiler maintenance designed for absolute winter reliability."
+      },
+      {
+        title: "24/7 Mechanical Service",
+        desc: "Rapid priority onsite mechanical response. We resolve urgent leakages, piping failures, and heating issues anytime day or night."
+      }
+    ]
   },
   "blue-coast": {
     ...defaultLead,
@@ -114,7 +141,7 @@ export const leads: Record<string, LeadData> = {
     slug: "revolution-mechanical",
     title: "Revolution Mechanical",
     logo: "/revolution-mechanical.png",
-    heroBgImage: "/hvac-hero.webp",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#6b9e2e",
     phone: "+1 (306) 529-4174",
     email: "revolutionmech@gmail.com",
@@ -124,14 +151,41 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing, Heating & AC craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.8",
     customerCount: "200+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.297798643631!2d-104.5825375!3d50.454178999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531ea1f2159ddf59%3A0x5e76c097745b37ba!2sRevolution%20Mechanical!5e0!3m2!1sen!2s!4v1778279805488!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.297798643631!2d-104.5825375!3d50.454178999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531ea1f2159ddf59%3A0x5e76c097745b37ba!2sRevolution%20Mechanical!5e0!3m2!1sen!2s!4v1778279805488!5m2!1sen!2s",
+    services: [
+      {
+        title: "Furnace Repair",
+        desc: "Precision diagnostics and rapid, reliable repairs to get your heating system back up and running safely."
+      },
+      {
+        title: "New Furnace Install",
+        desc: "Elite installation of energy-efficient furnaces customized to suit your home's layout and heating needs."
+      },
+      {
+        title: "Air Conditioner Repair",
+        desc: "Expert repair and seasonal maintenance to keep your home cool and comfortable throughout the summer."
+      },
+      {
+        title: "New Air Conditioner Install",
+        desc: "Professional setup of premium, modern air conditioning units for optimal cooling and lower utility bills."
+      },
+      {
+        title: "Water Treatment",
+        desc: "Advanced filtration, purification, and softening solutions for exceptionally clean, safe, and soft water."
+      },
+      {
+        title: "Renovations & New Construction",
+        desc: "High-fidelity mechanical and plumbing design-build contracting services for custom homes and renovations."
+      }
+    ]
   },
   "platinum-plumbing-heating": {
     ...defaultLead,
     slug: "platinum-plumbing-heating",
     title: "Platinum Plumbing and Heating Ltd",
     logo: "/platinum-plumbing-heating.png",
-    phone: "+353 86 458 2872",
+    heroBgImage: "/plumber-hvac-bg.webp",
+    phone: "086 458 2872",
     email: "info@platinumplumbing.ie",
     address: "Serving areas in Waterford, Ireland",
     heroHeading: "Elite Plumbing in Waterford",
@@ -139,14 +193,40 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing and heating craftsmanship to the Waterford community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "5.0",
     customerCount: "100+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39084.36952226659!2d-7.11302995!3d52.24750495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c69c63d9e44d%3A0xc5bb81888b67b9fb!2sWaterford%2C%20Ireland!5e0!3m2!1sen!2s!4v1778281432182!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39084.36952226659!2d-7.11302995!3d52.24750495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c69c63d9e44d%3A0xc5bb81888b67b9fb!2sWaterford%2C%20Ireland!5e0!3m2!1sen!2s!4v1778281432182!5m2!1sen!2s",
+    services: [
+      {
+        title: "Heating & Plumbing",
+        desc: "Full heating and plumbing installations, central boiler upgrades, and routine mechanical services across Waterford."
+      },
+      {
+        title: "Bathroom Specialists",
+        desc: "Waterford's elite bathroom renovation specialists. From high-end custom tile fittings to premium wetroom installations."
+      },
+      {
+        title: "Qualified & Insured",
+        desc: "Absolute peace of mind with master mechanical craftsmanship. Fully qualified, certified, and comprehensively insured."
+      },
+      {
+        title: "Emergency Leak Response",
+        desc: "Rapid priority dispatch for burst pipes, flooding, or sudden heating loss to safeguard your property's value."
+      },
+      {
+        title: "Boiler Upgrades & Care",
+        desc: "High-efficiency condensing boiler installations and expert safety tuning to reduce monthly energy expenditures."
+      },
+      {
+        title: "Fixture Replacements",
+        desc: "Expert mounting and repair of luxury faucets, power showers, dynamic radiators, and modern system fittings."
+      }
+    ]
   },
   "welldone-mechanical": {
     ...defaultLead,
     slug: "welldone-mechanical",
     title: "Welldone Mechanical Services",
     logo: "/welldone.png",
-    heroBgImage: "/hvac-hero.webp",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#77b033",
     phone: "+1 (306) 721-2744",
     email: "regina@welldone.com",
@@ -189,6 +269,7 @@ export const leads: Record<string, LeadData> = {
     slug: "velocity-mechanical",
     title: "Velocity Mechanical Solutions",
     logo: "/velocity.png",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#0ea5e9", // Oceanic Blue
     phone: "+1 (306) 591-7711",
     email: "info@velocityms.com",
@@ -198,13 +279,60 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.9",
     customerCount: "200+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.1062336818172!2d-104.59715755938798!3d50.472841013860936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1efb8051281d%3A0xdb813859948e4c81!2sVelocity%20Mechanical%20Solutions!5e0!3m2!1sen!2s!4v1778283174098!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.1062336818172!2d-104.59715755938798!3d50.472841013860936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1efb8051281d%3A0xdb813859948e4c81!2sVelocity%20Mechanical%20Solutions!5e0!3m2!1sen!2s!4v1778283174098!5m2!1sen!2s",
+    services: [
+      {
+        title: "Plumbing Services",
+        desc: "Comprehensive solutions including leak detection, drain clearing, piping, and fixture installations with absolute precision."
+      },
+      {
+        title: "Furnaces",
+        desc: "High-efficiency furnace installation, diagnostics, and repairs to keep your heating system running strong all winter."
+      },
+      {
+        title: "Air Conditioners",
+        desc: "Advanced cooling systems installations and maintenance to ensure clean air and optimal indoor climate control."
+      },
+      {
+        title: "Heat Recovery Ventilation (HRV)",
+        desc: "State-of-the-art HRV systems designed to continuously supply fresh, filtered air while retaining thermal energy."
+      },
+      {
+        title: "Boilers",
+        desc: "Expert setup, piping, and calibration of premium boiler systems for reliable radiant heating and comfort."
+      },
+      {
+        title: "Sump Pumps",
+        desc: "Heavy-duty sump pump and battery backup solutions to protect your basement and foundation from water damage."
+      },
+      {
+        title: "Water Filtration",
+        desc: "Comprehensive whole-home water filtration systems that eliminate contaminants for clean, great-tasting water."
+      },
+      {
+        title: "Water Softeners",
+        desc: "Top-tier water softeners to protect your piping, appliances, and fixtures from hard water and scale buildup."
+      },
+      {
+        title: "Water Heaters",
+        desc: "Professional installation and servicing of conventional hot water tanks and ultra-efficient tankless systems."
+      },
+      {
+        title: "Gas Appliances",
+        desc: "Licensed gas fitting and hookups for ranges, BBQs, heaters, and dryers to ensure safety and code compliance."
+      },
+      {
+        title: "New Home Build",
+        desc: "Complete, high-fidelity mechanical and plumbing design-build contracting services for new home constructions."
+      }
+    ]
   },
   "honest-plumbing-heating": {
     ...defaultLead,
     slug: "honest-plumbing-heating",
     title: "Honest Plumbing and Heating",
     logo: "/honest-plumbing.png",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#0ea5e9", // Oceanic Blue
     phone: "+1 (306) 993-1800",
     email: "honestplumbing@gmail.com",
@@ -230,13 +358,44 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.0",
     customerCount: "200+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2665898179025!2d-104.5596832!3d50.454760199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1fa23548237f%3A0xe7ae36cf4ceb9240!2sRoto-Rooter!5e0!3m2!1sen!2s!4v1778339435121!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2665898179025!2d-104.5596832!3d50.454760199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1fa23548237f%3A0xe7ae36cf4ceb9240!2sRoto-Rooter!5e0!3m2!1sen!2s!4v1778339435121!5m2!1sen!2s",
+    services: [
+      {
+        title: "Drain Cleaning/Snaking",
+        desc: "Professional snaking and cleanout services for kitchen sinks, showers, tubs, and main lines to restore perfect flow without harsh chemicals."
+      },
+      {
+        title: "Pipe Thawing",
+        desc: "Safe and gradual methods to thaw frozen plumbing lines and prevent costly bursts or cracks during harsh cold temperatures."
+      },
+      {
+        title: "TV Camera Inspections",
+        desc: "High-resolution video camera inspections fed directly through your pipes to view system conditions and target exact repair needs in real time."
+      },
+      {
+        title: "High Pressure Water Jetting",
+        desc: "Advanced hydro-jetting to flush away small debris, stubborn blockages, and grease buildup for both residential and commercial lines."
+      },
+      {
+        title: "Vacuum Pumping",
+        desc: "Specialized vacuum pumping services to thoroughly clean out residential or commercial holding tanks, sumps, and septic systems."
+      },
+      {
+        title: "Grease Trap & Pit Cleaning",
+        desc: "Regular professional maintenance and cleanout of grease traps and interceptor pits to protect sewer lines and ensure kitchen compliance."
+      },
+      {
+        title: "Pressure Washing",
+        desc: "Heavy-duty exterior pressure washing to clear away deep grime, stains, and debris from driveways, concrete, and exterior surfaces."
+      }
+    ]
   },
   "queen-city-plumbing-heating": {
     ...defaultLead,
     slug: "queen-city-plumbing-heating",
     title: "Queen City Plumbing & Heating",
     logo: "/queen-city-plumbing.png",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#f59e0b", // Amber Yellow
     phone: "+1 (306) 533-5352",
     email: "queencityplumbing@gmail.com",
@@ -246,7 +405,33 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.8",
     customerCount: "100+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.9780047175823!2d-104.58575092356206!3d50.460134271594065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1fb01b626b85%3A0xbe5ecff2b536af1d!2sQueen%20City%20Plumbing%20%26%20Heating!5e0!3m2!1sen!2s!4v1778342225185!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.9780047175823!2d-104.58575092356206!3d50.460134271594065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1fb01b626b85%3A0xbe5ecff2b536af1d!2sQueen%20City%20Plumbing%20%26%20Heating!5e0!3m2!1sen!2s!4v1778342225185!5m2!1sen!2s",
+    services: [
+      {
+        title: "Gas Furnace Maintenance",
+        desc: "Thorough inspection of burners, combustion chamber cleaning, pilot light adjustments, and safety checks to reduce hazards and prolong lifespan."
+      },
+      {
+        title: "Natural Gas Furnace Care",
+        desc: "Certified maintenance programs designed specifically to keep your natural gas heating systems running safely, reliably, and at peak efficiency."
+      },
+      {
+        title: "HVAC Furnace Maintenance",
+        desc: "All-around comprehensive diagnostics including ductwork inspections, air filter replacements, and motor lubrication for consistent indoor air quality."
+      },
+      {
+        title: "Boiler System Services",
+        desc: "Professional installation, seasonal calibration, and precision repairs of traditional or high-efficiency boilers for steady radiant heating."
+      },
+      {
+        title: "Air Conditioning Solutions",
+        desc: "High-quality diagnostic tune-ups, custom setups, and emergency repairs of central A/C and cooling systems for maximum summer comfort."
+      },
+      {
+        title: "Full-Scale Plumbing",
+        desc: "Licensed residential and commercial plumbing installations, priority leak repairs, and general fixture upgrades across Regina."
+      }
+    ]
   },
   "reimche-excavating": {
     ...defaultLead,
@@ -262,13 +447,40 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level excavating and plumbing craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.9",
     customerCount: "200+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0181332866814!2d-104.57273909999999!3d50.440762899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1fd08ed65843%3A0x5e9c4459f911464c!2sReimche%20Excavating%20Ltd.!5e0!3m2!1sen!2s!4v1778343045080!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0181332866814!2d-104.57273909999999!3d50.440762899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1fd08ed65843%3A0x5e9c4459f911464c!2sReimche%20Excavating%20Ltd.!5e0!3m2!1sen!2s!4v1778343045080!5m2!1sen!2s",
+    services: [
+      {
+        title: "Sewer Line Replacement",
+        desc: "Quality main sewer line replacement from front cleanout to the city connection, serving Regina and all surrounding areas quickly."
+      },
+      {
+        title: "Water Line Replacement",
+        desc: "Elite water line installations and modern structural replacements optimized for maximum durability and flow."
+      },
+      {
+        title: "Emergency Sewer Services",
+        desc: "24/7 rapid response for urgent sewer replacements when lines fail or require immediate mechanical excavation."
+      },
+      {
+        title: "Plug Pulling Technology™",
+        desc: "Saves you money! Advanced trenchless line replacement system that protects your lawn and structures from excavation damage."
+      },
+      {
+        title: "Thick Wall ABS Sewer Pipe",
+        desc: "We exclusively install thick wall ABS sewer pipes to ensure supreme structural strength and decades of worry-free service."
+      },
+      {
+        title: "Sewer Replacement Specialists",
+        desc: "Regina's premier crew for professional stack replacements, main lines, and high-end plumbing utility excavations."
+      }
+    ]
   },
   "neighbours-mechanical": {
     ...defaultLead,
     slug: "neighbours-mechanical",
     title: "Neighbours Mechanical",
     logo: "/neighbours-mechanical.png",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#0ea5e9", // Oceanic Blue
     phone: "+1 (306) 761-2905",
     email: "neighboursmechanical@gmail.com",
@@ -278,13 +490,40 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing and mechanical craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.7",
     customerCount: "200+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.191879810421!2d-104.61081860000002!3d50.4561515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e6bd6b1add7%3A0x5c1a362c2d89033e!2sNeighbours%20Mechanical!5e0!3m2!1sen!2s!4v1778344105159!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.191879810421!2d-104.61081860000002!3d50.4561515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e6bd6b1add7%3A0x5c1a362c2d89033e!2sNeighbours%20Mechanical!5e0!3m2!1sen!2s!4v1778344105159!5m2!1sen!2s",
+    services: [
+      {
+        title: "Refrigeration",
+        desc: "Specialized diagnostics, repairs, and preventative maintenance for commercial and industrial refrigeration and cooling systems."
+      },
+      {
+        title: "HVAC Services",
+        desc: "Licensed heating, ventilation, and air conditioning installations, custom setups, and seasonal tune-ups for premium comfort."
+      },
+      {
+        title: "Plumbing Services",
+        desc: "Licensed residential and commercial plumbing installations, rapid leak interventions, and professional piping services."
+      },
+      {
+        title: "Gas Fitting",
+        desc: "Certified gas line installations, BBQ hookups, garage heater hookups, and code-compliance system updates with absolute safety."
+      },
+      {
+        title: "Kitchen Equipment",
+        desc: "Expert setup, mechanical support, and routine servicing of premium commercial kitchen equipment and hardware."
+      },
+      {
+        title: "Laundry Equipment",
+        desc: "Professional mechanical installations and repair services for commercial laundry units, ventilation, and hardware systems."
+      }
+    ]
   },
   "eh-plus-plumbing-heating": {
     ...defaultLead,
     slug: "eh-plus-plumbing-heating",
     title: "Eh Plus Plumbing & Heating",
     logo: "/eh-plus-plumbing.png",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#EF4444",
     phone: "+1 (306) 559-6181",
     email: "ehplus@myaccess.ca",
@@ -310,14 +549,40 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing and sewer craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "4.0",
     customerCount: "100+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.956307268119!2d-104.6335842!3d50.441914499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e0d3fe74beb%3A0x2e6c6d30e1ab4fbc!2sA%20%26%20E%20Sewer%20%26%20Water%20Service!5e0!3m2!1sen!2s!4v1778345584077!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.956307268119!2d-104.6335842!3d50.441914499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e0d3fe74beb%3A0x2e6c6d30e1ab4fbc!2sA%20%26%20E%20Sewer%20%26%20Water%20Service!5e0!3m2!1sen!2s!4v1778345584077!5m2!1sen!2s",
+    services: [
+      {
+        title: "Sewer & Water Line Repair",
+        desc: "Over 40 years of expert excavation and diagnostic repairs to restore broken main lines with long-lasting structural durability."
+      },
+      {
+        title: "Sewer & Water Line Replacement",
+        desc: "Professional, heavy-duty replacement of aging sewer pipes and water lines using premium-grade municipal materials."
+      },
+      {
+        title: "Sewer Backup Resolution",
+        desc: "Rapid-response emergency clearing of main lines, stack blockages, and complex commercial/residential sewer backups."
+      },
+      {
+        title: "Basement Bathroom Rough-In",
+        desc: "Precision drainage and water supply line installation for basement additions, ensuring perfect slope, venting, and structural safety."
+      },
+      {
+        title: "Bathroom Framing & Finishing",
+        desc: "Complete turnkey bathroom remodels, from expert structural framing to high-fidelity finishing, tilework, and fixture setup."
+      },
+      {
+        title: "Construction Contracting",
+        desc: "Comprehensive excavation, trenching, and utility construction contracting services for residential and commercial sites."
+      }
+    ]
   },
   "gr-mechanical-contracting": {
     ...defaultLead,
     slug: "gr-mechanical-contracting",
     title: "G & R Mechanical Contracting",
     logo: "/mechanical-plumbing.png",
-    heroBgImage: "/hvac-hero.webp",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#EF4444",
     phone: "+1 (306) 537-3645",
     email: "grm@sasktel.net",
@@ -327,7 +592,33 @@ export const leads: Record<string, LeadData> = {
     heroSubtext: "Providing master-level plumbing, heating & air conditioning craftsmanship to the Regina community. We offer 24/7 rapid response and elite installations for your home.",
     trustRating: "5.0",
     customerCount: "100+",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.598766005678!2d-104.61444005210197!3d50.459525915863026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e440faaaaab%3A0x2ec636f43a4d261c!2sG%20%26%20R%20Mechanical%20Contracting!5e0!3m2!1sen!2s!4v1778346098856!5m2!1sen!2s"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.598766005678!2d-104.61444005210197!3d50.459525915863026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e440faaaaab%3A0x2ec636f43a4d261c!2sG%20%26%20R%20Mechanical%20Contracting!5e0!3m2!1sen!2s!4v1778346098856!5m2!1sen!2s",
+    services: [
+      {
+        title: "Air to Air Exchangers",
+        desc: "Certified installation and balancing of air to air heat recovery exchangers for exceptional ventilation and thermal retention."
+      },
+      {
+        title: "Air Conditioning",
+        desc: "Licensed installation, diagnostics, and repairs of modern central and ductless split A/C systems to keep your summers cool."
+      },
+      {
+        title: "Boilers & Furnaces",
+        desc: "Expert repairs, seasonal calibration, and setup of premium boilers and furnace systems for dependable winter heating."
+      },
+      {
+        title: "Gas Line & Fireplaces",
+        desc: "Licensed gas fitting, custom fireplace installations, BBQ lines, and complete system compliance checks with absolute safety."
+      },
+      {
+        title: "Water Heaters & Softeners",
+        desc: "Professional installation and repair of standard hot water tanks, tankless systems, and high-fidelity whole-house softeners."
+      },
+      {
+        title: "Backflow Prevention",
+        desc: "Certified testing, device installation, and maintenance to safeguard your clean water supply and meet code compliance."
+      }
+    ]
   },
   "joules-hvac-electric": {
     ...defaultLead,
@@ -545,7 +836,7 @@ export const leads: Record<string, LeadData> = {
     slug: "five-star-plumbing-heating-air-conditioning",
     title: "Five Star Plumbing Heating & Air Conditioning",
     logo: "/five-star.png",
-    heroBgImage: "/hvac-hero.webp",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#2FA7A0",
     phone: "+1 (306) 934-7002",
     email: "info@FiveStarPlumbing.com",
@@ -588,7 +879,7 @@ export const leads: Record<string, LeadData> = {
     slug: "nickel-plumbing-heating",
     title: "Nickel Plumbing & Heating",
     logo: "/nickel-plumbing.png",
-    heroBgImage: "/hvac-hero.webp",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#0ea5e9", // Oceanic Blue
     phone: "+1 (306) 653-1899",
     email: "info@nickelplumbing.com",
@@ -715,7 +1006,7 @@ export const leads: Record<string, LeadData> = {
     slug: "revo-plumbing-heating",
     title: "Revo Plumbing & Heating",
     logo: "/revo-plumbing.png",
-    heroBgImage: "/hvac-hero.webp",
+    heroBgImage: "/plumber-hvac-bg.webp",
     primaryColor: "#0ea5e9",
     phone: "+13063740922",
     address: "2406 Wheaton Ave #2, Saskatoon, SK S7L 5Z4",
