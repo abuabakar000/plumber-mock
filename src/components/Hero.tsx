@@ -45,6 +45,7 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-zinc-950/20 to-zinc-950/90"></div>
+        <div className="absolute inset-0 bg-black/40 z-0 pointer-events-none"></div>
       </div>
 
       {/* Hero Content */}
@@ -83,7 +84,7 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
             {subtext}
           </p>
           {/* Mobile copywriting (reduced by one sentence/line) */}
-          <p className="block md:hidden text-base text-white mb-10 max-w-xl font-light leading-relaxed">
+          <p className="block md:hidden text-[17px] text-white mb-10 max-w-xl font-light leading-relaxed">
             {mobileSubtext}
           </p>
 
