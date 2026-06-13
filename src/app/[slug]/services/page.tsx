@@ -6,7 +6,13 @@ import ProcessSection from "@/components/ProcessSection";
 import MapSection from "@/components/MapSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getLeadData } from "@/data/leads";
+import { getLeadData, leads } from "@/data/leads";
+
+export async function generateStaticParams() {
+  return Object.keys(leads).map((slug) => ({
+    slug: slug,
+  }));
+}
 import { 
   Waves, 
   Droplets, 
@@ -166,7 +172,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ slug:
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-zinc-800/60">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image 
-            src="/services-neutral-hero.png"
+            src="/services-neutral-hero.webp"
             fill
             alt="Premium Home Services"
             className="object-cover object-center opacity-30 mix-blend-overlay"

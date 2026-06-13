@@ -5,7 +5,13 @@ import MapSection from "@/components/MapSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import FaqSection from "@/components/FaqSection";
 import CtaSection from "@/components/CtaSection";
-import { getLeadData } from "@/data/leads";
+import { getLeadData, leads } from "@/data/leads";
+
+export async function generateStaticParams() {
+  return Object.keys(leads).map((slug) => ({
+    slug: slug,
+  }));
+}
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

@@ -48,7 +48,7 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
         <div className="w-full md:w-2/3 max-w-3xl text-left">
 
 
-          <h1 className="text-5xl md:text-7xl lg:text-[90px] font-light text-white tracking-tighter leading-[0.95] mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <h1 className="text-4xl md:text-7xl lg:text-[90px] font-light text-white tracking-tighter leading-[0.95] mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             {words.map((word, i) => (
               <React.Fragment key={i}>
                 {word.toLowerCase() === highlightWord?.toLowerCase() ? (
@@ -74,7 +74,7 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
             ))}
           </h1>
 
-          <p className="text-lg md:text-xl text-white mb-10 max-w-xl font-light leading-relaxed">
+          <p className="text-lg md:text-xl text-white mb-10 max-w-xl font-light leading-relaxed line-clamp-3 md:line-clamp-none">
             {subtext}
           </p>
 
