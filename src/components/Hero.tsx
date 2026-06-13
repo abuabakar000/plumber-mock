@@ -7,7 +7,11 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
   const leadData = passedLeadData || getLeadData();
   const heading = leadData.heroHeading;
   const highlightWord = leadData.highlightWord;
-  const subtext = leadData.heroSubtext;
+  const subtext = leadData.heroSubtext + " Get your quote today. Call us now.";
+  const subtextSentences = subtext.trim().split(". ");
+  const mobileSubtext = subtextSentences.length > 2 
+    ? subtextSentences.slice(0, 2).join(". ") + ". Call our local team now." 
+    : subtext + " Call our local team now.";
   const words = heading.split(" ");
   const desktopBg = leadData.heroBgImage || "/hero-bg.webp";
   const isPlumberHvac = desktopBg.includes("plumber-hvac-bg");
@@ -48,7 +52,7 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
         <div className="w-full md:w-2/3 max-w-3xl text-left">
 
 
-          <h1 className="text-4xl md:text-7xl lg:text-[90px] font-light text-white tracking-tighter leading-[0.95] mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <h1 className="text-[44px] md:text-7xl lg:text-[90px] font-light text-white tracking-tighter leading-[0.95] mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             {words.map((word, i) => (
               <React.Fragment key={i}>
                 {word.toLowerCase() === highlightWord?.toLowerCase() ? (
@@ -74,8 +78,13 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
             ))}
           </h1>
 
-          <p className="text-lg md:text-xl text-white mb-10 max-w-xl font-light leading-relaxed line-clamp-3 md:line-clamp-none">
+          {/* Desktop/Tablet copywriting */}
+          <p className="hidden md:block text-lg md:text-xl text-white mb-10 max-w-xl font-light leading-relaxed">
             {subtext}
+          </p>
+          {/* Mobile copywriting (reduced by one sentence/line) */}
+          <p className="block md:hidden text-base text-white mb-10 max-w-xl font-light leading-relaxed">
+            {mobileSubtext}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
