@@ -220,9 +220,9 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
 
         <div className="max-w-[1400px] mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 relative z-10">
           
-          <div className="flex items-center gap-8 group">
+          <div className="flex items-center gap-8 group/logo">
             <div className="flex flex-col items-end">
-              <span className="text-white text-[10px] uppercase tracking-[0.6em] font-black leading-none mb-1">Designed</span>
+              <span className="text-white text-[10px] uppercase tracking-[0.6em] font-black leading-none mb-1 group-hover/logo:text-red-500 transition-colors duration-350">Designed</span>
               <span className="text-zinc-600 text-[8px] uppercase tracking-[0.4em] font-medium leading-none">with excellence</span>
             </div>
             
@@ -231,30 +231,39 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
             <img 
               src="/inex.png" 
               alt="Inex Labs" 
-              className="h-9 w-auto brightness-125"
+              className="h-9 w-auto brightness-125 transition-all duration-500 group-hover/logo:scale-105 group-hover/logo:brightness-150"
             />
           </div>
 
-          <div className="premium-border-wrap animate-levitate animate-pulse-glow">
-            <div className="premium-border-inner">
-              <Link 
-                href="https://www.inexlabs.com/contact" 
-                className="group relative px-12 py-5 bg-black rounded-sm flex items-center gap-6"
-              >
-                <div className="relative z-10 flex items-center gap-6">
-                  <span className="text-[12px] font-black tracking-[0.4em] uppercase text-white group-hover:text-red-500 transition-colors duration-500">
-                    Claim This Website
-                  </span>
-                  <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-red-600 group-hover:border-red-600 transition-all duration-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 text-white">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
+          {/* Interactive Glowing Wrapper */}
+          <div className="relative group">
+            {/* Glowing Backlight Halo (Pulses, brightens on hover) */}
+            <div className="absolute -inset-6 bg-gradient-to-r from-red-600 via-orange-500 to-red-600 rounded-lg blur-2xl opacity-25 group-hover:opacity-60 transition-opacity duration-700 animate-pulse pointer-events-none" />
+            
+            <div className="premium-border-wrap animate-levitate animate-pulse-glow relative z-10">
+              <div className="premium-border-inner">
+                <Link 
+                  href={leadData.slug === "default" ? "/claim" : `/claim?site=${leadData.slug}`}
+                  className="group/btn relative px-12 py-5 bg-black rounded-sm flex items-center gap-6 overflow-hidden"
+                >
+                  <div className="relative z-10 flex items-center gap-6">
+                    <span className="text-[12px] font-black tracking-[0.4em] uppercase text-white group-hover/btn:text-red-500 transition-colors duration-500">
+                      Claim This Website
+                    </span>
+                    <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 text-white">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
                   </div>
-                </div>
 
-                {/* Subtle Inner Glow */}
-                <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/5 transition-colors duration-500"></div>
-              </Link>
+                  {/* Shimmer Light sweep on hover */}
+                  <div className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover/btn:animate-shimmer pointer-events-none z-0" />
+
+                  {/* Subtle Inner Glow */}
+                  <div className="absolute inset-0 bg-red-600/0 group-hover/btn:bg-red-600/5 transition-colors duration-500 z-0"></div>
+                </Link>
+              </div>
             </div>
           </div>
 
