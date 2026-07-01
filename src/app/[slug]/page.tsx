@@ -37,9 +37,9 @@ export default async function LeadPage({ params }: { params: Promise<{ slug: str
       <Navbar leadData={leadData} />
       <main className="flex min-h-screen flex-col bg-zinc-950">
         <Hero leadData={leadData} />
-        <TrustSection leadData={leadData} />
-        <ServicesSection leadData={leadData} />
         <MapSection leadData={leadData} />
+        <ServicesSection leadData={leadData} />
+        <TrustSection leadData={leadData} />
         <WhyUsSection leadData={leadData} />
         <FaqSection leadData={leadData} />
         <CtaSection leadData={leadData} />
