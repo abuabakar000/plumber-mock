@@ -1,10 +1,13 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { LeadData, getLeadData } from "@/data/leads";
 
 export default function Footer({ leadData: passedLeadData }: { leadData?: LeadData }) {
   const leadData = passedLeadData || getLeadData();
+
 
   const defaultServicesList = [
     "Drain Cleaning",
@@ -198,17 +201,12 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
 
         </div>
 
-        {/* Copyright */}
-        <div className="pt-8 border-t border-zinc-800/60 text-center flex flex-col items-center justify-center">
-          <p className="text-zinc-500 text-[12px] font-light tracking-wide">
-            © {new Date().getFullYear()} {leadData.title}. All rights reserved.
-          </p>
-        </div>
+
 
       </div>
 
-      {/* ── AGENCY ATTRIBUTION BAR ── */}
-      <div className="bg-[#030303] py-16 relative overflow-hidden">
+      {/* ── AGENCY ATTRIBUTION BAR / CLAIM WEBSITE SECTION ── */}
+      <div className="bg-[#030303] py-20 relative overflow-hidden border-t border-zinc-900/60">
         {/* Animated Top Border Line */}
         <div className="absolute top-0 left-0 w-full h-[1px] overflow-hidden">
           <div className="absolute inset-0 bg-white/[0.03]"></div>
@@ -218,50 +216,126 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-red-600/5 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-red-600/5 rounded-full blur-[100px] pointer-events-none"></div>
 
-        <div className="max-w-[1400px] mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 relative z-10">
-          
-          <div className="flex items-center gap-8 group/logo">
-            <div className="flex flex-col items-end">
-              <span className="text-white text-[10px] uppercase tracking-[0.6em] font-black leading-none mb-1 group-hover/logo:text-red-500 transition-colors duration-350">Designed</span>
-              <span className="text-zinc-600 text-[8px] uppercase tracking-[0.4em] font-medium leading-none">with excellence</span>
-            </div>
-            
-            <div className="w-px h-10 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
-            
-            <img 
-              src="/inex.png" 
-              alt="Inex Labs" 
-              className="h-9 w-auto brightness-125 transition-all duration-500 group-hover/logo:scale-105 group-hover/logo:brightness-150"
-            />
+        <div className="max-w-[1100px] mx-auto px-6 relative z-10 flex flex-col items-center">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <span className="text-[9px] uppercase tracking-[0.4em] font-black text-red-500 mb-1.5 block">
+              OWN THIS WEBSITE
+            </span>
+            <h2 className="text-white text-2xl md:text-3xl font-black tracking-tight mb-2.5">
+              Make This Website Yours
+            </h2>
+            <p className="text-zinc-400 font-light text-[13px] max-w-lg mx-auto leading-relaxed">
+              Launch your service business with a high-performance web presence. Custom setup and management by <span className="text-white font-medium">iNEX Labs</span>.
+            </p>
           </div>
 
-          {/* Interactive Glowing Wrapper */}
-          <div className="relative group">
-            {/* Glowing Backlight Halo (Pulses, brightens on hover) */}
-            <div className="absolute -inset-6 bg-gradient-to-r from-red-600 via-orange-500 to-red-600 rounded-lg blur-2xl opacity-25 group-hover:opacity-60 transition-opacity duration-700 animate-pulse pointer-events-none" />
-            
-            <div className="premium-border-wrap animate-levitate animate-pulse-glow relative z-10">
+          {/* Typographic Split Layout */}
+          <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mb-12">
+            {/* Launch */}
+            <div className="flex flex-col">
+              <div className="mb-6 border-b border-zinc-900 pb-4">
+                <span className="text-[10px] text-zinc-500 tracking-[0.25em] font-bold uppercase block mb-1.5">01 / Launch Package</span>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-white text-4xl md:text-5xl font-black tracking-tight">C$249</span>
+                  <span className="text-red-500 text-[9px] tracking-[0.15em] font-bold uppercase">one-time</span>
+                </div>
+              </div>
+              <ul className="space-y-3.5 text-zinc-300 text-[13px] font-light">
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Personalized with your business details, services and branding
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Mobile-friendly website
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Contact form, map and call buttons
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Basic on-page SEO setup
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Domain connection
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> One revision
+                </li>
+              </ul>
+            </div>
+
+            {/* Custom */}
+            <div className="flex flex-col">
+              <div className="mb-6 border-b border-zinc-900 pb-4">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-zinc-500 text-[10px] tracking-[0.25em] font-bold uppercase block">02 / Custom Package</span>
+                  <span className="bg-red-500/10 text-red-500 text-[8px] px-1.5 py-0.5 rounded tracking-wide uppercase font-semibold border border-red-500/20">
+                    Popular
+                  </span>
+                </div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-white text-4xl md:text-5xl font-black tracking-tight">C$349</span>
+                  <span className="text-red-500 text-[9px] tracking-[0.15em] font-bold uppercase">one-time</span>
+                </div>
+              </div>
+              <ul className="space-y-3.5 text-zinc-300 text-[13px] font-light">
+                <li className="text-red-400 font-medium flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Everything in Launch, plus:
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Custom colours and content
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Layout and section changes
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Additional service customization
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5">•</span> Two revision rounds
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Hosting Note */}
+          <div className="text-zinc-500 text-[11px] font-light tracking-wide text-center mb-12">
+            * Hosting & system updates: <span className="text-zinc-300 font-medium">C$49/month</span>
+          </div>
+
+
+          {/* Bottom Bar: Left Logo & Right Button */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-8 w-full">
+            {/* Left side: iNEX Logo & Attribution */}
+            <div className="flex items-center gap-6 group">
+              <div className="flex flex-col items-end">
+                <span className="text-white text-[9px] uppercase tracking-[0.6em] font-black leading-none mb-1">Designed</span>
+                <span className="text-zinc-600 text-[8px] uppercase tracking-[0.4em] font-medium leading-none">with excellence</span>
+              </div>
+              <div className="w-px h-8 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
+              <img 
+                src="/inex.png" 
+                alt="Inex Labs" 
+                className="h-8 w-auto brightness-125"
+              />
+            </div>
+
+            {/* Right side: Button */}
+            <div className="premium-border-wrap animate-levitate animate-pulse-glow">
               <div className="premium-border-inner">
                 <Link 
-                  href={leadData.slug === "default" ? "/claim" : `/claim?site=${leadData.slug}`}
-                  className="group/btn relative px-12 py-5 bg-black rounded-sm flex items-center gap-6 overflow-hidden"
+                  href="https://www.inexlabs.com/contact" 
+                  className="group relative px-10 py-4.5 bg-red-600 hover:bg-red-500 rounded-sm flex items-center gap-4 transition-all duration-300 shadow-[0_0_20px_rgba(220,38,38,0.25)]"
                 >
-                  <div className="relative z-10 flex items-center gap-6">
-                    <span className="text-[12px] font-black tracking-[0.4em] uppercase text-white group-hover/btn:text-red-500 transition-colors duration-500">
+                  <div className="relative z-10 flex items-center gap-4">
+                    <span className="text-[10px] font-black tracking-[0.3em] uppercase text-white transition-colors duration-300">
                       Claim This Website
                     </span>
-                    <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 text-white">
+                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:scale-110 transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-3.5 h-3.5 text-white group-hover:text-red-600 transition-colors duration-300">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
                     </div>
                   </div>
-
-                  {/* Shimmer Light sweep on hover */}
-                  <div className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover/btn:animate-shimmer pointer-events-none z-0" />
-
-                  {/* Subtle Inner Glow */}
-                  <div className="absolute inset-0 bg-red-600/0 group-hover/btn:bg-red-600/5 transition-colors duration-500 z-0"></div>
                 </Link>
               </div>
             </div>
