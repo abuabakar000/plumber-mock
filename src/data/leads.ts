@@ -34,6 +34,7 @@ export const defaultLead: LeadData = {
   slug: "default",
   title: "ProPlumb",
   logo: "/logo.png",
+  heroBgImage: "/ChatGPT Image Jul 13, 2026, 12_34_58 PM.png",
   primaryColor: "#f59e0b",
   phone: "(306) 555-0123",
   address: "Your City, State & Surrounding Areas",

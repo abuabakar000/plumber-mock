@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { LeadData, getLeadData } from "@/data/leads";
+import { Calendar, ArrowRight } from "lucide-react";
 
 export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData }) {
   const leadData = passedLeadData || getLeadData();
+  const primaryColor = leadData.primaryColor || "#f59e0b";
   const heading = leadData.heroHeading;
   const highlightWord = leadData.highlightWord;
   const subtext = leadData.heroSubtext + " Get your quote today. Call us now.";
@@ -13,12 +15,14 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
     ? subtextSentences.slice(0, 2).join(". ") + ". Call our local team now." 
     : subtext + " Call our local team now.";
   const words = heading.split(" ");
-  const desktopBg = leadData.heroBgImage || "/hero-bg.webp";
+  const desktopBg = leadData.heroBgImage || "/ChatGPT Image Jul 13, 2026, 12_34_58 PM.png";
   const isPlumberHvac = desktopBg.includes("plumber-hvac-bg");
   const isHvac = desktopBg.includes("hvac");
   const mobileBg = isPlumberHvac 
     ? "/plumber-hvac-bg-mb.webp" 
-    : (isHvac ? "/hvac-mb.webp" : "/plumber-mb.webp");
+    : (isHvac 
+      ? "/hvac-mb.webp" 
+      : (desktopBg === "/hero-bg.webp" ? "/plumber-mb.webp" : desktopBg));
   
   return (
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-zinc-950 overflow-hidden">
@@ -90,16 +94,21 @@ export default function Hero({ leadData: passedLeadData }: { leadData?: LeadData
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Link
               href={leadData.slug === "default" ? "/contact" : `/${leadData.slug}/contact`}
-              style={{ backgroundColor: leadData.slug === "default" ? "" : leadData.primaryColor }}
-              className={`px-8 py-4 ${leadData.slug === "default" ? "bg-amber-500 hover:bg-amber-400" : "hover:brightness-110"} text-zinc-950 text-sm font-semibold uppercase tracking-widest transition-all duration-300 ease-out transform hover:-translate-y-1 flex items-center justify-center gap-2`}
+              style={{
+                backgroundColor: primaryColor,
+                boxShadow: `0 4px 20px -2px ${primaryColor}40, inset 0 1px 0 rgba(255,255,255,0.25)`,
+              }}
+              className="group px-8 py-4 rounded-xl text-zinc-950 text-sm font-semibold tracking-wide transition-all duration-300 ease-out hover:scale-[1.03] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 flex items-center justify-center gap-2.5"
             >
-              Request Consultation
+              <span>Schedule Now</span>
+              <Calendar className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
             </Link>
             <Link
               href={leadData.slug === "default" ? "/services" : `/${leadData.slug}/services`}
-              className="px-8 py-4 bg-transparent border border-zinc-600 text-white hover:border-white hover:bg-white/5 text-sm font-semibold uppercase tracking-widest transition-all duration-300 ease-out flex items-center justify-center gap-2"
+              className="group px-8 py-4 bg-zinc-900/40 hover:bg-zinc-900/80 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white text-sm font-semibold tracking-wide rounded-xl transition-all duration-300 ease-out hover:scale-[1.03] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 flex items-center justify-center gap-2.5 backdrop-blur-md"
             >
-              Explore Services
+              <span>Explore</span>
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

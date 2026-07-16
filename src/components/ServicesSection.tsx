@@ -17,32 +17,32 @@ export default function ServicesSection({ leadData: passedLeadData }: { leadData
     {
       title: leadData.services?.[0]?.title || "Drain Cleaning",
       desc: leadData.services?.[0]?.desc || "Clogged drains don't stand a chance. We clear blockages fast and keep your pipes flowing smoothly.",
-      icon: <Waves strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
+      icon: <Waves strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-6 h-6 sm:w-8 sm:h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
       title: leadData.services?.[1]?.title || "Leak Repair",
       desc: leadData.services?.[1]?.desc || "From minor leaks to major issues, we find the source and fix it right the first time.",
-      icon: <Droplets strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
+      icon: <Droplets strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-6 h-6 sm:w-8 sm:h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
       title: leadData.services?.[2]?.title || "Water Heater Services",
       desc: leadData.services?.[2]?.desc || "Installation, repair, and maintenance for all types of water heaters. Hot water, always.",
-      icon: <Flame strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
+      icon: <Flame strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-6 h-6 sm:w-8 sm:h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
       title: leadData.services?.[3]?.title || "Pipe Repair & Replacement",
       desc: leadData.services?.[3]?.desc || "Old, damaged, or corroded pipes? We replace them the right way—built to last.",
-      icon: <Wrench strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
+      icon: <Wrench strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-6 h-6 sm:w-8 sm:h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
       title: leadData.services?.[4]?.title || "Fixture Installation",
       desc: leadData.services?.[4]?.desc || "Sinks, faucets, toilets, and more—installed with precision and built for performance.",
-      icon: <Bath strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
+      icon: <Bath strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-6 h-6 sm:w-8 sm:h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     },
     {
       title: leadData.services?.[5]?.title || "Sump Pump Services",
       desc: leadData.services?.[5]?.desc || "Protect your home from water damage with reliable sump pump solutions.",
-      icon: <ArrowDownToLine strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-8 h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
+      icon: <ArrowDownToLine strokeWidth={1.5} style={{ color: leadData.slug === "default" ? "" : leadData.primaryColor }} className={`w-6 h-6 sm:w-8 sm:h-8 ${leadData.slug === "default" ? "text-amber-500" : ""} transition-transform duration-500 group-hover:scale-110`} />
     }
   ];
   return (
@@ -107,7 +107,7 @@ export default function ServicesSection({ leadData: passedLeadData }: { leadData
                 "--hover-border": leadData.slug === "default" ? "" : `${leadData.primaryColor}4d`,
                 "--hover-shadow": leadData.slug === "default" ? "" : `0 20px 40px -15px ${leadData.primaryColor}26`
               } as any}
-              className={`group relative bg-[#0c0e12] border border-zinc-800/60 rounded-xl p-6 md:p-8 hover:bg-[#0f1116] hover:-translate-y-2 ${leadData.slug === "default" ? "hover:border-amber-500/30 hover:shadow-[0_20px_40px_-15px_rgba(245,158,11,0.15)]" : "hover:border-[var(--hover-border)] hover:shadow-[var(--hover-shadow)]"} transition-all duration-500 ease-out flex flex-col h-full overflow-hidden z-10 ${idx >= 4 ? 'hidden lg:flex' : 'flex'}`}
+              className={`group relative bg-[#0c0e12] border border-zinc-800/60 rounded-xl p-5 sm:p-6 md:p-8 hover:bg-[#0f1116] hover:-translate-y-2 ${leadData.slug === "default" ? "hover:border-amber-500/30 hover:shadow-[0_20px_40px_-15px_rgba(245,158,11,0.15)]" : "hover:border-[var(--hover-border)] hover:shadow-[var(--hover-shadow)]"} transition-all duration-500 ease-out flex flex-col h-full overflow-hidden z-10 ${idx >= 4 ? 'hidden lg:flex' : 'flex'}`}
             >
               {/* Ambient Hover Glow inside the tile */}
               <div
@@ -131,18 +131,18 @@ export default function ServicesSection({ leadData: passedLeadData }: { leadData
                     borderColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}66`,
                     backgroundColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}0d`
                   }}
-                  className={`shrink-0 w-14 h-14 rounded-full border border-zinc-700/50 flex items-center justify-center bg-zinc-900/50 ${leadData.slug === "default" ? "group-hover:border-amber-500/40 group-hover:bg-amber-500/5" : ""} transition-colors duration-500 mb-6`}
+                  className={`shrink-0 w-11 h-11 sm:w-14 sm:h-14 rounded-full border border-zinc-700/50 flex items-center justify-center bg-zinc-900/50 ${leadData.slug === "default" ? "group-hover:border-amber-500/40 group-hover:bg-amber-500/5" : ""} transition-colors duration-500 mb-4 sm:mb-6`}
                 >
                   {service.icon}
                 </div>
-                <h3 className="text-white font-bold tracking-widest text-[13px] uppercase mb-3">
+                <h3 className="text-white font-bold tracking-widest text-xs sm:text-[13px] uppercase mb-2 sm:mb-3">
                   {service.title}
                 </h3>
                 <div
                   style={{ backgroundColor: leadData.slug === "default" ? "" : leadData.primaryColor }}
-                  className={`w-8 h-[2px] ${leadData.slug === "default" ? "bg-amber-500" : ""} mb-4 group-hover:w-12 transition-all duration-500`}
+                  className={`w-8 h-[2px] ${leadData.slug === "default" ? "bg-amber-500" : ""} mb-3 sm:mb-4 group-hover:w-12 transition-all duration-500`}
                 />
-                <p className="text-zinc-400 text-[15px] font-light leading-relaxed mt-auto">
+                <p className="text-zinc-400 text-[13px] sm:text-[15px] font-light leading-relaxed mt-auto">
                   {service.desc}
                 </p>
               </div>

@@ -112,36 +112,37 @@ export default function WhyUsSection({ leadData: passedLeadData }: { leadData?: 
         </div>
 
         {/* RIGHT COLUMN — feature grid */}
-        <div className="lg:w-[65%] grid grid-cols-2 md:grid-cols-3 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12 self-center">
+        <div className="lg:w-[65%] grid grid-cols-2 md:grid-cols-3 gap-x-4 sm:gap-x-8 gap-y-6 sm:gap-y-12 self-center">
           {features.map((feature, idx) => (
             <div 
               key={idx} 
-              className="flex flex-col group border-l border-zinc-800/50 pl-4 sm:pl-6 hover:border-[var(--primary-color)] transition-all duration-500"
+              className="flex flex-col group border-l border-zinc-800/50 pl-4 hover:border-[var(--primary-color)] transition-all duration-500"
             >
-              <div className="mb-4">
-                <div className="mb-4 transition-transform duration-500 group-hover:translate-x-1">
-                  <div
-                    style={{
-                      borderColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}33`,
-                      backgroundColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}0d`
-                    }}
-                    className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-zinc-900/50 border border-zinc-800/50 flex items-center justify-center mb-3 shadow-lg ${leadData.slug === "default" ? "group-hover:border-amber-500/30 group-hover:bg-amber-500/5" : ""} transition-all duration-300`}
-                  >
-                    <div className="scale-[0.6] sm:scale-75 origin-center">
-                      {feature.icon}
-                    </div>
+              {/* Icon Container */}
+              <div className="mb-3 transition-transform duration-500 group-hover:translate-x-1">
+                <div
+                  style={{
+                    borderColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}33`,
+                    backgroundColor: leadData.slug === "default" ? "" : `${leadData.primaryColor}0d`
+                  }}
+                  className={`w-8 h-8 sm:w-12 sm:h-12 rounded-lg bg-zinc-900/50 border border-zinc-800/50 flex items-center justify-center shadow-lg ${leadData.slug === "default" ? "group-hover:border-amber-500/30 group-hover:bg-amber-500/5" : ""} transition-all duration-300`}
+                >
+                  <div className="scale-[0.5] sm:scale-75 origin-center">
+                    {feature.icon}
                   </div>
                 </div>
-                <h3
-                  style={{ "--hover-color": leadData.slug === "default" ? "" : leadData.primaryColor } as any}
-                  className={`text-white font-bold tracking-[0.05em] text-[11px] sm:text-[13px] uppercase mb-2 leading-snug ${leadData.slug === "default" ? "group-hover:text-amber-500" : "group-hover:text-[var(--hover-color)]"} transition-colors duration-300`}
-                >
-                  {feature.title}
-                </h3>
-                <p className="text-zinc-500 text-[11px] sm:text-[13px] font-light leading-relaxed group-hover:text-zinc-300 transition-colors duration-500 line-clamp-3 sm:line-clamp-none">
-                  {feature.desc}
-                </p>
               </div>
+
+              {/* Text Content */}
+              <h3
+                style={{ "--hover-color": leadData.slug === "default" ? "" : leadData.primaryColor } as any}
+                className={`text-white font-bold tracking-[0.05em] text-[10px] sm:text-[13px] uppercase mb-1 sm:mb-2 leading-snug ${leadData.slug === "default" ? "group-hover:text-amber-500" : "group-hover:text-[var(--hover-color)]"} transition-colors duration-300`}
+              >
+                {feature.title}
+              </h3>
+              <p className="text-zinc-500 text-[11px] sm:text-[13px] font-light leading-relaxed group-hover:text-zinc-300 transition-colors duration-500 hidden sm:block">
+                {feature.desc}
+              </p>
             </div>
           ))}
         </div>

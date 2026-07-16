@@ -7,6 +7,7 @@ import { LeadData, getLeadData } from "@/data/leads";
 
 export default function Footer({ leadData: passedLeadData }: { leadData?: LeadData }) {
   const leadData = passedLeadData || getLeadData();
+  const contactPath = leadData.slug === "default" ? "/contact" : `/${leadData.slug}/contact`;
 
 
   const defaultServicesList = [
@@ -230,76 +231,33 @@ export default function Footer({ leadData: passedLeadData }: { leadData?: LeadDa
             </p>
           </div>
 
-          {/* Typographic Split Layout */}
-          <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mb-12">
-            {/* Launch */}
-            <div className="flex flex-col">
-              <div className="mb-6 border-b border-zinc-900 pb-4">
-                <span className="text-[10px] text-zinc-500 tracking-[0.25em] font-bold uppercase block mb-1.5">01 / Launch Package</span>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-white text-4xl md:text-5xl font-black tracking-tight">C$249</span>
-                  <span className="text-red-500 text-[9px] tracking-[0.15em] font-bold uppercase">one-time</span>
-                </div>
+          {/* Centered Single Offer */}
+          <div className="w-full max-w-md mx-auto flex flex-col items-center text-center mb-12">
+            <div className="mb-6 border-b border-zinc-900 pb-4 w-full text-center">
+              <span className="text-[10px] text-zinc-500 tracking-[0.25em] font-bold uppercase block mb-1.5">Growth & Management Plan</span>
+              <div className="flex items-baseline justify-center gap-2">
+                <span className="text-white text-5xl md:text-7xl font-black tracking-tight">C$80</span>
+                <span className="text-red-500 text-[10px] md:text-xs tracking-[0.15em] font-bold uppercase">/ month</span>
               </div>
-              <ul className="space-y-3.5 text-zinc-300 text-[13px] font-light">
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Personalized with your business details, services and branding
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Mobile-friendly website
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Contact form, map and call buttons
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Basic on-page SEO setup
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Domain connection
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> One revision
-                </li>
-              </ul>
             </div>
-
-            {/* Custom */}
-            <div className="flex flex-col">
-              <div className="mb-6 border-b border-zinc-900 pb-4">
-                <div className="flex items-center gap-2 mb-1.5">
-                  <span className="text-zinc-500 text-[10px] tracking-[0.25em] font-bold uppercase block">02 / Custom Package</span>
-                  <span className="bg-red-500/10 text-red-500 text-[8px] px-1.5 py-0.5 rounded tracking-wide uppercase font-semibold border border-red-500/20">
-                    Popular
-                  </span>
-                </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-white text-4xl md:text-5xl font-black tracking-tight">C$349</span>
-                  <span className="text-red-500 text-[9px] tracking-[0.15em] font-bold uppercase">one-time</span>
-                </div>
-              </div>
-              <ul className="space-y-3.5 text-zinc-300 text-[13px] font-light">
-                <li className="text-red-400 font-medium flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Everything in Launch, plus:
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Custom colours and content
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Layout and section changes
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Additional service customization
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">•</span> Two revision rounds
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Hosting Note */}
-          <div className="text-zinc-500 text-[11px] font-light tracking-wide text-center mb-12">
-            * Hosting & system updates: <span className="text-zinc-300 font-medium">C$49/month</span>
+            <ul className="space-y-4 text-zinc-300 text-[13.5px] font-light text-left w-full max-w-[340px]">
+              <li className="flex items-start gap-2.5">
+                <span className="text-red-500 mt-0.5 text-base leading-none">•</span>
+                <span>Premium Cloud Hosting & security updates</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-red-500 mt-0.5 text-base leading-none">•</span>
+                <span>Unlimited website text & image changes</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-red-500 mt-0.5 text-base leading-none">•</span>
+                <span>SMS alerts sent immediately when someone schedules on your <Link href={contactPath} className="text-red-500 hover:text-red-400 underline font-medium">scheduler page</Link></span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-red-500 mt-0.5 text-base leading-none">•</span>
+                <span>Ongoing monthly local SEO optimization</span>
+              </li>
+            </ul>
           </div>
 
 

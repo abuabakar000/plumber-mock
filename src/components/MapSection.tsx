@@ -25,7 +25,7 @@ export default function MapSection({ leadData: passedLeadData }: { leadData?: Le
             height="100%"
             style={{ border: 0 }}
             allowFullScreen={true}
-            loading="lazy"
+            loading="eager"
             referrerPolicy="no-referrer-when-downgrade"
             className="absolute inset-0 grayscale-[15%] contrast-[1.05]"
           ></iframe>
